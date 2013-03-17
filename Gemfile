@@ -14,11 +14,21 @@ group :production do
 end
 
 group :development do
-  gem 'rspec-rails', '2.0.1'
+  gem 'rspec','>= 2.13.0'
+  gem 'rspec-rails', '>= 2.13.0'
+  gem 'autotest-standalone'
+  gem 'autotest-rails-pure'
+  gem 'autotest-fsevent'
+  gem 'autotest-growl'
 end
 group :test do
-  gem 'rspec', '2.0.1'
-  gem 'webrat', '0.7.1'
+  gem 'rspec','>= 2.13.0'
+  gem 'rspec-rails', '>= 2.13.0'
+  gem 'webrat'
+  gem 'autotest-standalone'
+  gem 'autotest-rails-pure'
+  gem 'autotest-fsevent'
+  gem 'autotest-growl'
 end
 
 # Gems used only for assets and not required

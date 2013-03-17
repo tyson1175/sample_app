@@ -29,6 +29,11 @@ GEM
       i18n (~> 0.6)
       multi_json (~> 1.0)
     arel (3.0.2)
+    autotest-fsevent (0.2.8)
+      sys-uname
+    autotest-growl (0.2.16)
+    autotest-rails-pure (4.1.2)
+    autotest-standalone (4.5.11)
     builder (3.0.4)
     coffee-rails (3.2.2)
       coffee-script (>= 2.2.0)
@@ -43,6 +48,7 @@ GEM
     eventmachine (1.0.3)
     execjs (1.4.0)
       multi_json (~> 1.0)
+    ffi (1.4.0)
     hike (1.2.1)
     i18n (0.6.4)
     journey (1.0.4)
@@ -84,18 +90,21 @@ GEM
     rake (10.0.3)
     rdoc (3.12.2)
       json (~> 1.4)
-    rspec (2.0.1)
-      rspec-core (~> 2.0.1)
-      rspec-expectations (~> 2.0.1)
-      rspec-mocks (~> 2.0.1)
-    rspec-core (2.0.1)
-    rspec-expectations (2.0.1)
-      diff-lcs (>= 1.1.2)
-    rspec-mocks (2.0.1)
-      rspec-core (~> 2.0.1)
-      rspec-expectations (~> 2.0.1)
-    rspec-rails (2.0.1)
-      rspec (~> 2.0.0)
+    rspec (2.13.0)
+      rspec-core (~> 2.13.0)
+      rspec-expectations (~> 2.13.0)
+      rspec-mocks (~> 2.13.0)
+    rspec-core (2.13.1)
+    rspec-expectations (2.13.0)
+      diff-lcs (>= 1.1.3, < 2.0)
+    rspec-mocks (2.13.0)
+    rspec-rails (2.13.0)
+      actionpack (>= 3.0)
+      activesupport (>= 3.0)
+      railties (>= 3.0)
+      rspec-core (~> 2.13.0)
+      rspec-expectations (~> 2.13.0)
+      rspec-mocks (~> 2.13.0)
     sass (3.2.7)
     sass-rails (3.2.6)
       railties (~> 3.2.0)
@@ -107,6 +116,8 @@ GEM
       rack (~> 1.0)
       tilt (~> 1.1, != 1.3.0)
     sqlite3 (1.3.7)
+    sys-uname (0.9.1)
+      ffi (>= 1.0.0)
     thin (1.5.0)
       daemons (>= 1.0.9)
       eventmachine (>= 0.12.6)
@@ -129,14 +140,18 @@ PLATFORMS
   ruby
 
 DEPENDENCIES
+  autotest-fsevent
+  autotest-growl
+  autotest-rails-pure
+  autotest-standalone
   coffee-rails (~> 3.2.1)
   jquery-rails
   pg
   rails (= 3.2.11)
-  rspec (= 2.0.1)
-  rspec-rails (= 2.0.1)
+  rspec (>= 2.13.0)
+  rspec-rails (>= 2.13.0)
   sass-rails (~> 3.2.3)
   sqlite3
   thin
   uglifier (>= 1.0.3)
-  webrat (= 0.7.1)
+  webrat
