@@ -24,7 +24,7 @@ end
 group :test do
   gem 'rspec','>= 2.13.0'
   gem 'rspec-rails', '>= 2.13.0'
-  gem 'webrat'
+  gem 'webrat', '>= 0.7.3'
   gem 'autotest-standalone'
   gem 'autotest-rails-pure'
   gem 'autotest-fsevent'
